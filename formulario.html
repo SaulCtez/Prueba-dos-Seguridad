@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="Form">
+            <h2 style="text-align: center ;">Formulario</h2>
+            <div>
+                <label for="textNombre">Nombre</label>
+                <input type="text" id="textNombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="txtApellido">Apellido</label>
+                <input type="text" id="txtApellido" placeholder="Apellido" required>
+            </div>
+            <div>
+                <label for="txtcurp">Curp</label>
+                <input type="text" id="txtcurp" placeholder="Curp" required>
+            </div>
+            <div>
+                <label for="txtFecha">Fecha de Nacimiento</label>
+                <input type="date" id="txtFecha" placeholder="Fecha de Nacimiento" max="9999-12-31" required>
+            </div>
+            <div>
+              <label for="txtEstado">Estado</label>
+              <select id="txtEstado" required>
+                  <option selected disabled>Selecciona un estado</option>
+                  <option>Aguascalientes</option>
+                  <option>Baja California</option>
+                  <option>Baja California Sur</option>
+                  <option>Campeche</option>
+                  <option>Chiapas</option>
+                  <option>Chihuahua</option>
+                  <option>Coahuila</option>
+                  <option>Colima</option>
+                  <option>Durango</option>
+                  <option>Estado de México</option>
+                  <option>Guanajuato</option>
+                  <option>Guerrero</option>
+                  <option>Hidalgo</option>
+                  <option>Jalisco</option>
+                  <option>Michoacán</option>
+                  <option>Morelos</option>
+                  <option>Nayarit</option>
+                  <option>Nuevo León</option>
+                  <option>Oaxaca</option>
+                  <option>Puebla</option>
+                  <option>Querétaro</option>
+                  <option>Quintana Roo</option>
+                  <option>San Luis Potosí</option>
+                  <option>Sinaloa</option>
+                  <option>Sonora</option>
+                  <option>Tabasco</option>
+                  <option>Tamaulipas</option>
+                  <option>Tlaxcala</option>
+                  <option>Veracruz</option>
+                  <option>Yucatán</option>
+                  <option>Zacatecas</option>
+              </select>
+            </div>
+            <div>
+                <label for="txtPersonas">¿Cuántas personas viven en su casa?</label>
+                <select id="txtPersonas" onchange="mostrarCampos()" required>
+                    <option selected disabled>Seleccione una opción</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div>
+            <div id="nombresContainer"></div>
+            <div>
+                <button type="reset" id="limpiar">Limpiar</button>
+            </div>
+            <div>
+                <button type="submit" id="enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="form.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
